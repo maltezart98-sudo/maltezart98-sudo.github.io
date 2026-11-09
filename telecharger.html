@@ -9,13 +9,14 @@ nav{display:flex;gap:16px;margin-top:40px;font-size:14px}a{color:#B48CFF}.card{b
 <h1 style="margin-top:28px">Télécharger Dravio</h1>
 <p class="muted">Un repas, une séance par jour, et on monte de niveau entre amis.</p>
 <div class="card">
-<a class="btn primary" id="ios" href="https://apps.apple.com/app/id6829496919">App Store (iPhone)</a>
-<a class="btn ghost" id="android" href="https://play.google.com/store/apps/details?id=com.dravio.app">Google Play (Android)</a>
+<a class="btn primary" id="android" href="https://play.google.com/store/apps/details?id=com.dravio.app">Google Play (Android)</a>
+<span class="btn ghost" aria-disabled="true" style="opacity:.6">App Store : bientôt disponible</span>
+<p class="muted" id="iosnote" hidden>La version iPhone arrive très bientôt sur l’App Store.</p>
 </div>
 <script>
 (function () {
   var ua = navigator.userAgent;
-  if (/iPhone|iPad|iPod/i.test(ua)) location.replace(document.getElementById('ios').href);
+  if (/iPhone|iPad|iPod/i.test(ua)) document.getElementById('iosnote').hidden = false;
   else if (/Android/i.test(ua)) location.replace(document.getElementById('android').href);
 })();
 </script>
