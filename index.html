@@ -35,7 +35,7 @@ h1,h2,h3{color:var(--text);font-weight:800;margin:0;letter-spacing:-.02em}
 .stats span{display:block;margin-top:10px;color:#55555C;font-size:15px}
 /* Écrans du héros */
 .screens{display:flex;justify-content:center;gap:20px;margin-top:56px}
-.phone{flex:none;width:min(260px,40vw);aspect-ratio:640/1385;border-radius:40px;padding:9px;background:#1A1A1D;border:1px solid var(--line)}
+.phone{flex:none;width:min(260px,40vw);aspect-ratio:640/1391;border-radius:40px;padding:9px;background:#1A1A1D;border:1px solid var(--line)}
 .phone img{display:block;width:100%;height:100%;object-fit:cover;border-radius:31px}
 .screens .phone:nth-child(2){margin-top:-28px}
 section{padding:96px 0}
@@ -52,7 +52,7 @@ section{padding:96px 0}
 .feature ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
 .feature li{display:flex;gap:12px;color:var(--soft)}
 .feature li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--accent)}
-.visual{position:relative;background:var(--panel);border-radius:32px;padding:44px 0 0;display:flex;justify-content:center;overflow:hidden;min-height:480px}
+.visual{position:relative;background:var(--panel) var(--motif,none) center/520px auto repeat;border-radius:32px;padding:44px 0 0;display:flex;justify-content:center;overflow:hidden;min-height:480px}
 .visual .phone{width:min(250px,56vw);border-radius:40px 40px 0 0;padding:9px 9px 0;border-bottom:0;margin-bottom:-2px}
 .visual .phone img{border-radius:31px 31px 0 0;height:auto;aspect-ratio:auto;object-fit:cover;object-position:top}
 .visual .phone{aspect-ratio:auto;height:440px;overflow:hidden}
@@ -139,38 +139,38 @@ footer a{color:var(--muted);text-decoration:none}footer a:hover{color:#fff}
 <div class="side"><p>Le réseau social de ta régularité. Publie ton repas ou ta séance, gagne de l’XP, et tes amis te poussent à continuer.</p><div class="ctas"><a class="btn lime" href="https://play.google.com/store/apps/details?id=com.dravio.app"><span class="t"><small>Disponible sur</small>Google Play</span></a><span class="btn ghost" aria-disabled="true"><span class="t"><small>Bientôt sur</small>App Store</span></span></div></div>
 </section>
 <div class="stats reveal"><div><b>+50 XP</b><span>par repas et par séance</span></div><div><b>24 h</b><span>puis ton post disparaît</span></div><div><b>40+</b><span>sports</span></div><div><b>200+</b><span>badges à débloquer</span></div></div>
-<div class="screens reveal"><div class="phone"><img src="assets/fil.webp" alt="Fil des amis" width="640" height="1385" fetchpriority="high" decoding="async"></div><div class="phone"><img src="assets/accueil.webp" alt="Écran d’accueil : série, XP et défis" width="640" height="1385" decoding="async"></div><div class="phone"><img src="assets/collection.webp" alt="Collection de badges" width="640" height="1385" loading="lazy" decoding="async"></div></div>
+<div class="screens reveal"><div class="phone"><img src="assets/fil.webp" alt="Fil des amis" width="640" height="1391" fetchpriority="high" decoding="async"></div><div class="phone"><img src="assets/accueil.webp" alt="Écran d’accueil : série, XP et défis" width="640" height="1391" decoding="async"></div><div class="phone"><img src="assets/profil.webp" alt="Profil : niveau, série et semaine" width="640" height="1391" loading="lazy" decoding="async"></div></div>
 </div>
 
 <section id="fonctionnalites"><div class="wrap">
-<div class="feature reveal" style="--accent:var(--violet-ink);--panel:var(--violet)">
-<div class="visual"><div class="phone"><img src="assets/publier.webp" alt="Publication d’une séance" width="640" height="1385" loading="lazy" decoding="async"></div>
+<div class="feature reveal" style="--accent:var(--violet-ink);--panel:var(--violet);--motif:url(assets/motif-violet.webp)">
+<div class="visual"><div class="phone"><img src="assets/publier.webp" alt="Publication d’une séance" width="640" height="1391" loading="lazy" decoding="async"></div>
 <div class="chip br"><small>Séance publiée</small><div class="row"><span class="ok">✓</span><b>+50 XP</b></div></div></div>
 <div class="copy"><span class="label" style="--accent:var(--violet-ink)"><i></i>Publier</span><h2 class="caps"><em>Une photo,</em><br>c’est validé.</h2>
 <p>Prends ton repas ou ta séance en photo dans l’app. Ton post reste 24 h dans le fil de tes amis, puis disparaît : pas de pression, juste la régularité.</p>
 <ul><li>Ajoute le détail si tu veux : exercices, séries, charges, durée.</li><li>Scanne un repas : l’IA estime les apports pour ton journal privé.</li><li>Tu choisis qui voit chaque post.</li></ul></div>
 </div>
 
-<div class="feature rev reveal" style="--accent:var(--orange);--panel:var(--orange)">
-<div class="visual"><div class="phone"><img src="assets/accueil.webp" alt="Série et niveau" width="640" height="1385" loading="lazy" decoding="async"></div>
+<div class="feature rev reveal" style="--accent:var(--orange);--panel:#D9682A;--motif:url(assets/motif-orange.webp)">
+<div class="visual"><div class="phone"><img src="assets/accueil.webp" alt="Série et niveau" width="640" height="1391" loading="lazy" decoding="async"></div>
 <div class="chip tl"><small>Ta série</small><b>12 jours d’affilée</b><div class="days"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div></div></div>
 <div class="copy"><span class="label" style="--accent:var(--orange)"><i></i>Progresser</span><h2 class="caps"><em>Ta série,</em><br>ton niveau,<br>ta ligue.</h2>
 <p>Chaque jour actif fait grandir ta série. L’XP te fait monter de niveau et te classe chaque semaine dans ta ligue.</p>
 <ul><li>Un gel protège ta série si tu rates un jour.</li><li>Les 5 premiers de la ligue montent chaque lundi.</li><li>Défis du mois et plus de 200 badges dans plus de 40 sports.</li></ul></div>
 </div>
 
-<div class="feature reveal" id="groupes" style="--accent:var(--lime);--panel:#2C2C31">
-<div class="visual"><div class="phone"><img src="assets/groupe.webp" alt="Défi en cours dans un groupe" width="640" height="1385" loading="lazy" decoding="async"></div>
+<div class="feature reveal" id="groupes" style="--accent:var(--lime);--panel:#C8F02C;--motif:url(assets/motif-lime.webp)">
+<div class="visual"><div class="phone"><img src="assets/groupe.webp" alt="Défi en cours dans un groupe" width="640" height="1391" loading="lazy" decoding="async"></div>
 <div class="chip bl"><small>Défi · 7 jours</small><b>Le plus de séances</b><div class="row"><span class="dot" style="background:#7414F4">S</span><span class="dot" style="background:#ED772F">A</span><span class="dot" style="background:#2FB7A8">L</span><span style="font-size:13px;color:#6A6A72">+3</span></div></div></div>
 <div class="copy"><span class="label" style="--accent:var(--lime)"><i></i>Groupes d’amis</span><h2 class="caps"><em>Ton groupe,</em><br>vos défis.</h2>
 <p>Crée un groupe avec tes amis, discutez, et lancez un défi : le plus de séances, de minutes ou de kilomètres sur 3, 7 ou 14 jours.</p>
 <ul><li>Jusqu’à 12 membres par groupe.</li><li>Le classement se met à jour tout seul avec vos posts.</li><li>Le gagnant prend +50 XP et le badge Champion du groupe.</li></ul></div>
 </div>
 
-<div class="feature rev reveal" id="evenements" style="--accent:#5FE0D2;--panel:var(--teal)">
-<div class="visual"><div class="phone"><img src="assets/evenement.webp" alt="Page d’un événement" width="640" height="1385" loading="lazy" decoding="async"></div>
-<div class="chip tr"><small>Jeudi · 18 h 30</small><b>Footing du jeudi</b><div class="row"><span class="ok" style="background:#2FB7A8">7</span><span style="font-size:14px">sur 12 participants</span></div></div></div>
-<div class="copy"><span class="label" style="--accent:#5FE0D2"><i></i>Événements</span><h2 class="caps"><em>Bougez</em><br>ensemble,<br>pour de vrai.</h2>
+<div class="feature rev reveal" id="evenements" style="--accent:var(--violet-ink);--panel:var(--violet);--motif:url(assets/motif-violet.webp)">
+<div class="visual"><div class="phone"><img src="assets/evenement.webp" alt="Page d’un événement" width="640" height="1391" loading="lazy" decoding="async"></div>
+<div class="chip tr"><small>Jeudi · 18 h 30</small><b>Footing du jeudi</b><div class="row"><span class="ok" style="background:#7414F4">7</span><span style="font-size:14px">sur 12 participants</span></div></div></div>
+<div class="copy"><span class="label" style="--accent:var(--violet-ink)"><i></i>Événements</span><h2 class="caps"><em>Bougez</em><br>ensemble,<br>pour de vrai.</h2>
 <p>Footing, séance au parc, match, tournoi : rejoins un événement près de chez toi ou organise le tien, dans un lieu public.</p>
 <ul><li>Carte, météo, point de rendez-vous et rappel le jour J.</li><li>Équipes composées par l’organisateur ou au choix.</li><li>Présence validée sur place : +50 XP, et un vote pour le meilleur joueur.</li></ul></div>
 </div>
